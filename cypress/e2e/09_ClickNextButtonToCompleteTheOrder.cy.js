@@ -8,6 +8,7 @@ it('SiteVisit', function(){
     cy.get('#internal_search').type('মিসির আলি{enter}')
     cy.get('.col-sm-12 > .fa')
     cy.get('#addbtn757').click()
+    cy.wait(6000)
     cy.get('.onsale-cart-item').click()
     cy.get('#checkout-btn').click()
 
